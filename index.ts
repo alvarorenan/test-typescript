@@ -1,6 +1,10 @@
-const input = document.getElementById("input") as HTMLInputElement;
+interface IUsuario {
+    id: string;
+    email: string;
+    cargo?: 'funcionario' | 'gerente' | 'coordenador' | 'supervisor';
+}
+function redirectione(usuario: IUsuario){
+    if(usuario.cargo){
 
-input.addEventListener('input', (event) => {
-    const i = event.currentTarget as HTMLInputElement;
-    console.log(i.value);
-});
+    }
+}
